@@ -114,8 +114,8 @@ export default class App extends Component {
     showRegisterView() {
         this.showView(<RegisterView onsubmit={this.register.bind(this)} />);
     }
-    showArticleView(){
-        this.showView(<ArticleView />)
+    showArticleView(bookId){
+        this.viewSingleArticle(bookId);
     }
 
     register(username, password) {
@@ -129,7 +129,7 @@ export default class App extends Component {
         }
     }
     viewSingleArticle(id){
-        KinveyRequester.getById(Id).then(console.log(id))
+        KinveyRequester.getByID(id).then((response) => this.showView(<ArticleView book={response} />))
     }
 
     saveAuthInSession(userInfo) {

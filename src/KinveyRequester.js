@@ -91,7 +91,7 @@ const KinveyRequester = (function() {
 
     return {
         loginUser, registerUser, logoutUser,
-        findAllBooks, createBook, findBookById, editBook, deleteBook
+        findAllBooks, createBook, findBookById, editBook, deleteBook, getByID
     }
 })();
 

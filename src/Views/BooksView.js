@@ -4,7 +4,7 @@ import './BooksView.css'
 export default class BooksView extends Component {
     render() {
         let bookRows = this.props.books.map(book =>
-        <div key={book._id} className="News" onClick={this.props.articleView}>
+        <div key={book._id} className="News" onClick={()=>this.props.articleView(book._id)}>
             {console.log(book._id)}
                 <h1>{book.title}</h1>
                 <h4>{book.author}</h4>

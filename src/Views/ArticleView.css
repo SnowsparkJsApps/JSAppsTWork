@@ -1,0 +1,12 @@
+#Article{
+    width: 60%;
+
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+#Article ul { list-style-type: none; }
+#Article ul li{
+    border: 3px solid #bed1c1;
+    margin: 10px auto;
+}

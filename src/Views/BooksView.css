@@ -1,0 +1,11 @@
+.News{
+    width: 60%;
+    border: 3px solid #555555;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+.buttons{
+position: absolute;
+    top: 50%;
+}
